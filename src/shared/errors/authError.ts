@@ -5,7 +5,7 @@ const AuthError = {
     name: "Auth Error",
     type: ApplicationError.type.INVALIDDATA,
     code: "BAD_REQUEST",
-    message: "You must enter a valid data",
+    message: "You must enter a valid email or password",
     statusCode: 400,
   },
   CREDENTIALS_ERROR: {

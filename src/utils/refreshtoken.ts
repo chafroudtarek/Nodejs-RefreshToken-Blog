@@ -23,6 +23,6 @@ export const createRefreshToken = async (user: User) => {
   return refreshToken.token;
 };
 
-export const verifyExpiration = (refreshToken: RefreshToken) => {
+export const verifyExpiration = (refreshToken: RefreshToken ) => {
   return refreshToken.expiryDate.getTime() < new Date().getTime();
 };
